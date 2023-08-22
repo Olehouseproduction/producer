@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "Trebuchet MS", Arial, Verdana;
+  src: url("./fonts/trebuchetms.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  font-family: "Trebuchet MS";
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  height: auto !important;
+  position: relative;
+  display: block;
+  background: #353535;
+}
+
+.wrapper {
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.foto {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  transform: translate(0, -15%);
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 14%;
+  text-align: center;
+  background: #353535;
+  margin-top: auto;
+  box-sizing: border-box;
+}
+
+.name {
+  height: 30px;
+  font-size: 24px;
+  line-height: 60px;
+  color: #818791;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  bottom: 2px;
+  position: relative;
+}
+.menu {
+  display: flex;
+  margin: 0 0 0 20px;
+  padding: 0;
+  width: auto;
+  justify-content: center;
+}
+
+a.menu__link {
+  color: #fff;
+  margin: 3px 15px 0 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 60px;
+}
+.menu li:first-child {
+  font-size: 24px;
+}
+
+#first {
+  font-size: 24px;
+  position: relative;
+  bottom: 3px;
+}
+
+#last {
+  color: #828791;
+}
+
+a.menu__link:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  padding: 10px 0;
+  width: 100%;
+  height: 15px;
+  font-size: 10px;
+  background: none;
+  color: #757575;
+  text-align: center;
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 924px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 850px) {
+  .footer span {
+    display: none;
+  }
+}
+
+@media (max-width: 694px) {
+  .menu {
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    align-items: center;
+  }
+
+  a.menu__link {
+    margin: 3px 15px 0 0;
+    line-height: 20px;
+  }
+
+  .content {
+    justify-content: flex-start;
+  }
+}
